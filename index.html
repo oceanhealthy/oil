@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ocean芯選｜魚油問卷調查</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f7ff;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 119, 182, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077b6;
+    }
+
+    label {
+      display: block;
+      margin-top: 1.5rem;
+      font-weight: bold;
+    }
+
+    select, input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.4rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .options {
+      margin-top: 0.5rem;
+    }
+
+    .options label {
+      font-weight: normal;
+      display: block;
+      margin: 0.4rem 0;
+    }
+
+    button {
+      margin-top: 2rem;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0096c7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Ocean芯選｜魚油產品調查問卷</h1>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61576124858999&tabs=timeline&width=500&height=100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+    <form id="surveyForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeVL2t8ptfMCQ8rk1e32vt2omUao1VCvBtYVm7aPPC9VUUp5Q/formResponse" method="POST">
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1748225476707!6m8!1m7!1sKyhMyKTFFGaBHalSj8Z4sQ!2m2!1d25.03464562205053!2d121.5300258529623!3f12.026095164777914!4f28.895845279967006!5f0.7820865974627469" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fhenrykao1031%2Fposts%2Fpfbid02qQGSrvrDJojx43k3MpzKvsw5ZhjfNrMuTeARUxEyuwYxwRvdRVwX7KgXydkJ93aJl&show_text=true&width=500" width="100%" height="186" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      
+      <!-- Q1 -->
+      <label for="habit">1. 您是否有定期補充魚油或 Omega-3 保健品的習慣？</label>
+      <div class="options">
+        <label><input type="radio" name="entry.1948856248" value="是" required> 是</label>
+        <label><input type="radio" name="entry.1948856248" value="否"> 否</label>
+      </div>
+      
+      <!-- Q2 -->
+      <label>2. 您選擇魚油產品時最在意的是什麼？（可複選）</label>
+      <div class="options">
+        <label><input type="checkbox" name="entry.1682300692" value="產地來源"> 產地來源</label>
+        <label><input type="checkbox" name="entry.1682300692" value="有無腥味"> 有無腥味</label>
+        <label><input type="checkbox" name="entry.1682300692" value="價格"> 價格</label>
+        <label><input type="checkbox" name="entry.1682300692" value="含量與純度"> 含量與純度</label>
+        <label><input type="checkbox" name="entry.1682300692" value="第三方檢驗認證"> 第三方檢驗認證</label>
+      </div>
+
+      <!-- Q3 -->
+      <label>3. 您平常在哪裡購買魚油或保健食品？（可複選）</label>
+      <div class="options">
+        <label><input type="checkbox" name="entry.977941811" value="連鎖藥局"> 連鎖藥局</label>
+        <label><input type="checkbox" name="entry.977941811" value="網路電商"> 網路電商</label>
+        <label><input type="checkbox" name="entry.977941811" value="直銷/代購"> 直銷/代購</label>
+        <label><input type="checkbox" name="entry.977941811" value="醫療院所"> 醫療院所</label>
+        <input type="text" name="entry.977941811" placeholder="其他請填寫（非必填）">
+      </div>
+
+      <!-- Q4 -->
+      <label for="interest">4. 若有一款「無腥味、來源透明、醫師推薦」的魚油，您會有興趣購買嗎？</label>
+      <select name="entry.1221765703" id="interest" required>
+        <option value="">請選擇</option>
+        <option value="非常有興趣">非常有興趣</option>
+        <option value="有點興趣">有點興趣</option>
+        <option value="沒有興趣">沒有興趣</option>
+      </select>
+
+      <!-- Q5 -->
+      <label for="form">5. 對於魚油膠囊的大小與服用方式，您偏好哪一種？</label>
+      <select name="entry.262875746" id="form" required>
+        <option value="">請選擇</option>
+        <option value="小顆易吞膠囊">小顆易吞膠囊</option>
+        <option value="嚼錠/軟糖">嚼錠/軟糖</option>
+        <option value="無特別偏好">無特別偏好</option>
+      </select>
+
+      <button type="submit">送出問卷</button>
+    </form>
+  </div>
+<a href="https://developers.facebook.com/docs/plugins/?locale=zh_TW">連結社交外掛</a>
+<a href="home">Home</a>
+<a href="https://www.facebook.com/profile.php?id=61576124858999"><img src="fb_icon.png" alt="FB"><title>FB粉絲頁</title></a>
+<a href="https://www.youtube.com/@SeeSeeC"><img src="you tube_icon.png" alt="連結至YT"></a>
+</body>
+</html>
